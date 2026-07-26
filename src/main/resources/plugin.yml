@@ -1,0 +1,7 @@
+name: BedwarsShuffle
+version: '1.0'
+main: dev.combi.bedwarsshuffle.BedwarsShuffle
+api-version: '1.21'
+authors: [ Combi ]
+description: Periodic random team reshuffling for MBedwars
+depend: [ MBedwars ]

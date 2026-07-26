@@ -1,0 +1,24 @@
+# BedwarsShuffle config
+
+# Periodically swaps players between teams in pairs. Each pair trades places completely:
+# player A joins B's team and is teleported to the exact spot B was standing in, while B
+# joins A's team and lands where A was. Since beds and upgrades belong to the team rather
+# than the player, each one immediately owns the other's bed and upgrade levels. Their
+# leather helmet and leggings are re-dyed to the new team's colour at the same time.
+# Each cycle picks a fresh random delay between the bounds below.
+# Requires a restart after changing.
+enabled: true
+
+# Logs every swap to the console: who traded with whom, the coordinates involved, and whether
+# each player actually stayed where they were placed. Leave off in production — it is chatty.
+debug: false
+
+# Random delay range between shuffles, in seconds.
+min_seconds: 60
+max_seconds: 180
+
+# Shown to every player in the arena when a shuffle happens.
+announce:
+  title: "&eTEAM SHUFFLE"
+  subtitle: "&7Everyone has been swapped!"
+  chat: "&eTeams have been shuffled — check your new team!"
